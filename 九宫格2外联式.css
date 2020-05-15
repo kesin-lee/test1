@@ -1,0 +1,12 @@
+Box{
+    background-color: #d4d4f5;
+    align-content: center;
+    overflow: hidden;
+}
+.box{
+    background-color: orange;
+    border-radius: 10%;
+    width:30%;
+    float:left;
+    margin: 1%;
+    padding-bottom: 30%;}

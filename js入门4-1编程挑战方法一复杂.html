@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>4-1编程挑战</title>
+    <style type="text/css">
+        body {
+            border:2px solid yellow;
+            font-size:20px;
+            width: 400px;
+            height: 600px;
+        }
+        .one{
+        color: red;
+        }
+        .two{
+            width: 500px;
+            height: 500px;
+        }
+        .three{
+            display: none;
+        }
+        .four{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+<p id="p1">大家好，我是二年一班王小明</p>
+<input type="button" value="改变颜色" onclick="addcolor()"/>;
+<input type="button" value="改变宽高" onclick="changewh()"/>;
+<input type="button" value="隐藏内容" onclick="hide()"/>;
+<input type="button" value="显示内容" onclick="appear()"/>;
+<input type="button" value="取消设置" onclick="Reset()"/>;
+
+<script type="text/javascript">
+        function addcolor(){
+            var aa=document.getElementById("p1");
+            aa.className="one";
+        }
+        function changewh() {
+            var bb=document.getElementById("p1");
+            bb.className="two";
+        }
+        function hide() {
+            var cc=document.getElementById("p1");
+            cc.className="three";
+        }
+        function appear() {
+            var dd=document.getElementById("p1");
+            dd.className="four";
+        }
+        function Reset() {
+            var ee=confirm("是否取消设置？")
+            if(ee==true){
+                document.getElementById("p1").className="body"
+            }
+function Reset(){
+var a=confirm("是否取消设置？")
+if(a==true){
+    document.getElementById("txt").removeAttribute("style");
+}
+}
+        }
+    </script>
+
+
+</body>
+</html>

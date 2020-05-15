@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="外部式样式.css" rel="stylesheet" type="text/css">
+    <style>
+        span {
+            color: greenyellow !important;
+        }
+
+        span {
+            color: #953;
+            font-size: 20px;
+        }
+
+        p {
+            text-indent: 2em;
+        }
+
+        .textcenter {
+            border: red solid 2px;
+            text-align: center;
+        }
+
+        .imgcernter {
+            text-align: center;
+        }
+
+        h3 {
+            width: 100px;
+            border: 2px dotted mediumpurple;
+            margin: 20px auto;
+        }
+/*以下是已知宽高水平竖直居中*/
+        .makeCenter {
+            background-color: purple;
+            border: 2px solid yellow;
+            height: 300px;
+            position: relative;
+        }
+        .makeCenter1 {
+            border: 1px dashed green;
+            width: 100px;
+            height: 50px;
+            position: absolute;
+            top: 50%;
+            right: 50%;
+            margin: -25px -50px 0 0;
+            background-color: #f00;
+        }
+/*以上是已知宽高水平竖直居中*/
+
+    </style>
+</head>
+<body>
+<h1>
+    唧唧复唧唧，<a href="http://www.baidu.com">木兰</a>当户织。<span>不闻机杼声</span>，惟闻女叹息。<span class="ask">问<span>女</span>何所思，问女何所忆。女亦无所思，女亦无所忆。<span>昨夜见军帖，可汗大点兵。</span></span>军书十二卷，卷卷有爷名。阿爷无大儿，木兰无长兄。愿为市鞍马，从此替爷征。东市买骏马，西市买鞍鞯，南市买辔头，北市买长鞭。<br/>
+    <!--<div class="pingze">平平仄仄平平仄<span>动不动啊</span>
+    </div>
+    <div class="zeping">仄仄平平仄仄平</div>-->
+    <div class="box">
+        <div class="box1">1</div>
+        <div class="box2">2</div>
+        <div class="box3">3</div>
+        <div class="box4">4</div>
+    </div>
+    <!--以上是justif-content对横轴排列方式的更改-->
+    <div class="Box">
+        <div class="Box1">Box1</div>
+        <div class="Box2">Box2</div>
+        <div class="Box3">Box3</div>
+        <div class="Box4">Box4</div>
+    </div>
+    <!--以上是align-items对纵轴排列方式的更改-->
+    <div class="BOX">
+        <div class="BOX1">BOX1</div>
+        <div class="BOX2">BOX2</div>
+        <div class="BOX3">BOX3</div>
+        <div class="BOX4">BOX4</div>
+    </div>
+    <div class="textcenter" style="margin: 10px">了不起的盖茨比</div>
+    <div class="imgcernter"><img src="http://img.mukewang.com/52da54ed0001ecfa04120172.jpg" alt="请重新加载" title="罗纳尔多饰">
+    </div>
+    <h3>
+        明月几时有，把酒问青天？不知天上宫阙，今夕是何年。我欲乘风回去，又恐琼楼玉宇。高处不胜寒，起舞弄清影，何似在人间。转朱阁，低绮户，照无眠。不应有恨，何事长向别时圆。人有悲欢离合，月有阴晴圆缺，此事古难全。但愿人长久，千里共婵娟。</h3>
+    <div class="makeCenter">
+        <div class="makeCenter1">wanna center</div>
+    </div>
+</h1>
+</body>
+</html>
+
+

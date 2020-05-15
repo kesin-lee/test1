@@ -1,0 +1,147 @@
+h1 {
+    color: pink;
+}
+
+/*以下为使用justif-content设置横轴排列*/
+.box {
+    background-color: blue;
+    height: 400px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.box div {
+    border: 2px solid grey;
+    width: 200px;
+    height: 200px;
+}
+
+.box1 {
+    background-color: red;
+}
+
+.box2 {
+    background-color: yellow;
+}
+
+.box3 {
+    background-color: green;
+}
+
+.box4 {
+    background-color: purple;
+}
+
+/*以上为使用justif-content设置横轴排列*/
+
+/*以下为使用justif-content设置纵轴排列*/
+.Box {
+    background-color: grey;
+    height: 600px;
+    display: flex;
+    align-items: stretch;
+}
+
+.Box div {
+    width: auto;
+    height: auto;
+}
+
+.Box1 {
+    background-color: red;
+    font-size: 15px;
+}
+
+.Box2 {
+    background-color: yellow;
+    font-size: 20px;
+}
+
+.Box3 {
+    font-size: 25px;
+    background-color: green;
+}
+
+.Box4 {
+    font-size: 30px;
+    background-color: orange;
+}
+
+/*以上为使用justif-content设置纵轴排列*/
+
+/*以下为给子元素设置flex*/
+.BOX {
+    height: 600px;
+    background-color: blue;
+    display: flex;
+}
+
+.BOX div {
+    height: 200px;
+}
+.BOX1 {
+    background-color: red;
+    flex: 1;
+}
+.BOX2 {
+    background-color:darkorange;
+    flex: 2;
+}
+.BOX3{
+    background-color: darkgreen;
+    flex:3;
+}
+.BOX4{
+    background-color: mediumpurple;
+    flex:4;
+}
+/*以下为层模型固定定位、相对定位*/
+.pingze {
+    float: left;
+    position: relative;
+    left: 30px;
+    top: 40px;
+}
+
+.zeping {
+    float: right;
+}
+
+/*以上为层模型固定定位、相对定位*/
+
+/*以下为选择器优先级*/
+/* *{
+           color: red;
+       }*/
+/*通用选择器*/
+a {
+    font-size: 24px;
+}
+
+/*伪类选择器*/
+.ask {
+    font-family: 宋体;
+}
+
+/*类选择器*/
+ask span {
+    font-family: 楷体;
+    color: aqua;
+}
+
+/*后代选择器*/
+.ask > span {
+    font-family: 华文新魏;
+}
+
+/*子选择器> */
+/* 优先级排序：内联样式>ID选择器>类选择器>标签选择器>通配符选择器*/
+/*div {
+    border:2px solid #ff0000;
+    width: 200px;
+    height: 400px;
+    font-family: "华文新魏";
+}*/
+/*以上为选择器优先级*/
+
+
