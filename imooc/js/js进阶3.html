@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>数组</title>
+    <script type="text/javascript">
+        //定义数组的三种方法：
+        //方法一：var myarr=new Array(68,99,80);
+        //方法二：var myarr=[68,99,80];
+        var myarr = new Array();
+
+        /*方法三：var myarr=new Array();
+          myarr[0]=68;
+          myarr[1]=99;
+          myarr[2]=80;
+         */
+        function jiafa() {
+            for (var i = 0; i < 3; ++i) {
+                myarr[i] = new Array();
+                for (var j = 0; j < 6; ++j) {
+                    myarr[i][j] = i + j;
+                    document.write(myarr[i][j] + "&nbsp;");
+                }
+                document.write("<br />");
+            }
+        }
+
+        function chengfa() {
+            for (var i = 0; i < 3; ++i) {
+                myarr[i] = new Array();
+                for (var j = 0; j < 6; ++j) {
+                    myarr[i][j] = i * j;
+                    document.write(myarr[i][j] + "&nbsp;");
+                }
+                document.write("<br />");
+            }
+        }
+
+        var arr = ['*', '##', '***', '&&', '****', '##*'];
+        arr[7] = '**';
+        alert(arr.length);
+        document.write(arr[0]+'<br />'+arr[7]+'<br />'+arr[2]+'<br />'+arr[4])
+    </script>
+</head>
+<body>
+<input type="button" value="二位数字值为其索引值相加" onclick="jiafa()">
+<input type="button" value="二位数字值为其索引值相乘" onclick="chengfa()">
+</body>
+</html>
